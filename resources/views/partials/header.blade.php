@@ -1,3 +1,23 @@
+@php
+    
+    $headerData [
+    'listItems' => [
+        'CHARACTERS',
+        'COMICS',
+        'MOVIES',
+        'TV',
+        'GAMES',
+        'COLLECTIBLES',
+        'VIDEOS',
+        'FANS',
+        'NEWS',
+        'SHOP'
+        ]                 
+    ];
+    
+@endphp
+
+
 <div class="container">
     <header class="d-flex justify-content-between">
         <img class="my-3" src="/public/img/dc-logo.png" alt="dc-logo">
@@ -13,9 +33,20 @@
 <img class="jumbo" src="./assets/jumbotron.jpg" alt="">
 
 
-return {
-    listItems: ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VIDEOS", "FANS", "NEWS", "SHOP"],                 
-}
+$headerData [
+    'listItems' => [
+        'CHARACTERS',
+        'COMICS',
+        'MOVIES',
+        'TV',
+        'GAMES',
+        'COLLECTIBLES',
+        'VIDEOS',
+        'FANS',
+        'NEWS',
+        'SHOP'
+        ]                 
+];
 
 <style lang="scss" scoped>
     img {

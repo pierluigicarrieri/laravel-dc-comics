@@ -1,3 +1,70 @@
+@php
+    
+    $footerData = [
+    'images' => [
+        'backgroundImage' => 'footer-bg.jpg',
+        'logo' => 'dc-logo-bg.png'
+    ],
+    'topFooterItems' => [
+        [
+            'title' => 'DC COMICS',
+            'items' => [
+                'Characters',
+                'Comics',
+                'Movies',
+                'TV',
+                'Games',
+                'Videos',
+                'News'
+            ]
+        ],
+        [
+            'title' => 'SHOP',
+            'items' => [
+                'Shop DC',
+                'Shop DC Collectibles'
+            ]
+        ],
+        [
+            'title' => 'DC',
+            'items' => [
+                'Terms of use',
+                'Privacy policy (New)',
+                'Ad Choices',
+                'Advertising',
+                'Jobs',
+                'Subscriptions',
+                'Talent Workshops',
+                'CPSC Certificates',
+                'Ratings',
+                'Shop Help',
+                'Contact Us'
+                ]
+        ],
+        [
+            'title' => 'SITES',
+            'items' => [
+                'DC',
+                'MAD Magazine',
+                'DC Kids',
+                'DC Universe',
+                'DC Power Visa'
+            ]
+        ],
+    ],
+    'bottomFooterItems' => [
+        'footer-facebook.png',
+        'footer-twitter.png',
+        'footer-youtube.png',
+        'footer-pinterest.png',
+        'footer-periscope.png'
+    ]
+];
+
+@endphp
+
+
+
 <footer class="flex-grow-1 d-flex flex-column">
     <div class="footer-top flex-grow-1">
         <div class="container d-flex justify-content-between">
@@ -48,35 +115,6 @@
 </footer>
 
 
-
-
-return {
-    images: {
-        backgroundImage: "footer-bg.jpg",
-        logo: "dc-logo-bg.png"
-    },
-    topFooterItems: [
-        {
-            title: "DC COMICS",
-            items: ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"]
-        },
-        {
-            title: "SHOP",
-            items: ["Shop DC", "Shop DC Collectibles"]
-        },
-        {
-            title: "DC",
-            items: ["Terms of use", "Privacy policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"]
-        },
-        {
-            title: "SITES",
-            items: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
-        },
-    ],
-    bottomFooterItems: ["footer-facebook.png", "footer-twitter.png", "footer-youtube.png", "footer-pinterest.png", "footer-periscope.png"]
-}
-}
-}
 
 
 
