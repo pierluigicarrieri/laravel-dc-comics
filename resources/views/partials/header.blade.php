@@ -1,67 +1,32 @@
-@php
-    
-    $headerData [
-    'listItems' => [
-        'CHARACTERS',
-        'COMICS',
-        'MOVIES',
-        'TV',
-        'GAMES',
-        'COLLECTIBLES',
-        'VIDEOS',
-        'FANS',
-        'NEWS',
-        'SHOP'
-        ]                 
-    ];
-    
+@php   
+    $headerData = [
+        1 => 'CHARACTERS',
+        2 => 'COMICS',
+        3 => 'MOVIES',
+        4 => 'TV',
+        5 => 'GAMES',
+        6 => 'COLLECTIBLES',
+        7 => 'VIDEOS',
+        8 => 'FANS',
+        9 => 'NEWS',
+        10 => 'SHOP'               
+    ]  
 @endphp
-
 
 <div class="container">
     <header class="d-flex justify-content-between">
-        <img class="my-3" src="/public/img/dc-logo.png" alt="dc-logo">
+        <img class="my-3 logo" src="/images/dc-logo.png" alt="dc-logo">
         <nav class="d-flex align-items-center">
             <ul class="nav">
-                <li class="nav-item" v-for="element in listItems">
-                    <a class="nav-link" href="#"><strong>{{element}}</strong></a>
+                @foreach ($headerData as $listItem)
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>{{ $listItem }}</strong></a>
                 </li>
+                @endforeach
             </ul>
         </nav>
     </header>
 </div>
-<img class="jumbo" src="./assets/jumbotron.jpg" alt="">
+<div class="jumbo"></div>
 
 
-$headerData [
-    'listItems' => [
-        'CHARACTERS',
-        'COMICS',
-        'MOVIES',
-        'TV',
-        'GAMES',
-        'COLLECTIBLES',
-        'VIDEOS',
-        'FANS',
-        'NEWS',
-        'SHOP'
-        ]                 
-];
-
-<style lang="scss" scoped>
-    img {
-        aspect-ratio: 1/1;
-        height: 80px;
-    }
-
-    a {
-        font-size: 0.7rem;
-        color: #000000;
-    }
-
-    .jumbo {
-    height: 400px;
-    width: 100%;
-    margin-bottom: -150px; 
-  }
-</style>
