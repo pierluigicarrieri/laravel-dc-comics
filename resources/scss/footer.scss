@@ -1,0 +1,33 @@
+footer {
+
+    .footer-top {
+        background-image: url('../public/images/footer-bg.jpg');
+    }
+
+    .footer-left > ul {
+        font-size: 0.7rem;
+    }
+
+    a {
+        color: #878787;
+        text-decoration: none;
+    }
+
+    li {
+        padding-top: 0.5rem;
+    }
+    .title {
+        color: #FFFFFF;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .footer-right > img {
+        height: 550px;
+        margin-top: -65px;
+        margin-bottom: -65px;
+    }
+    .footer-bottom {
+        background-color: #303030;
+    }
+
+}
