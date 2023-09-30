@@ -1,8 +1,12 @@
 @import "bootstrap";
 @import "/resources/scss/header.scss";
-// @import "/resources/scss/footer.scss";
+@import "/resources/scss/footer.scss";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
