@@ -9,8 +9,10 @@ class HomeController extends Controller
 {
     public function index() {
 
-        // $data = Comic::all();
+        $comics = Comic::all();
 
-        return view('home');
+        return view('home', [
+            'comics'=>$comics
+        ]);
     }
 }
