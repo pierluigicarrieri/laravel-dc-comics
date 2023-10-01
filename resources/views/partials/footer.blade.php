@@ -75,13 +75,13 @@
                     <li class="nav-item title"><strong>{{ $footerData['topFooterItems'][0]['title'] }}</strong></li>
                     @foreach ($footerData['topFooterItems'][0]['items'] as $item)
                     <li class="nav-item">
-                        <a href="#">{{$item}}</a>
+                        <a href="*">{{$item}}</a>
                     </li>
                     @endforeach
                     <li class="nav-item title mt-4"><strong>{{ $footerData['topFooterItems'][1]['title'] }}</strong></li>
                     @foreach ($footerData['topFooterItems'][1]['items'] as $item)
                     <li class="nav-item">
-                        <a href="#">{{$item}}</a>
+                        <a href="*">{{$item}}</a>
                     </li>
                     @endforeach
                 </ul>
@@ -89,7 +89,7 @@
                     <li class="nav-item title"><strong>{{ $footerData['topFooterItems'][2]['title'] }}</strong></li>
                     @foreach ($footerData['topFooterItems'][2]['items'] as $item)
                     <li class="nav-item">
-                        <a href="#">{{$item}}</a>
+                        <a href="*">{{$item}}</a>
                     </li>
                     @endforeach
                 </ul>
@@ -97,7 +97,7 @@
                     <li class="nav-item title"><strong>{{ $footerData['topFooterItems'][3]['title'] }}</strong></li>
                     @foreach ($footerData['topFooterItems'][3]['items'] as $item)
                     <li class="nav-item">
-                        <a href="#">{{$item}}</a>
+                        <a href="*">{{$item}}</a>
                     </li>
                     @endforeach
                 </ul>
@@ -118,7 +118,7 @@
                     <ul class="d-flex m-auto">
                         @foreach ($footerData['bottomFooterItems'] as $item)
                         <li class="px-2">
-                            <a href="#">
+                            <a href="*">
                                 <img src="{{ $item }}" alt="">
                             </a>  
                         </li>
@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-    
+
 </footer>
 
 

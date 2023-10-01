@@ -20,7 +20,7 @@
             <ul class="nav">
                 @foreach ($headerData as $listItem)
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><strong>{{ $listItem }}</strong></a>
+                    <a class="nav-link" href="*"><strong>{{ $listItem }}</strong></a>
                 </li>
                 @endforeach
             </ul>
