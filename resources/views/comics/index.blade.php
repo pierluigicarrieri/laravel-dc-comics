@@ -1,8 +1,10 @@
 @extends('layouts.public')
 
+@section('title', 'Comics')
+
 @section('content')
 
-<main>
+<main class="py-5">
 
     <div class="container">
 
@@ -15,10 +17,12 @@
                 <div class="col">
 
                     <div class="card h-100">
-                        <img src="{{$comic['thumb']}}" class="card-img-top h-25" alt="">
+                        <a href="{{route('comics.show', $comic['id'])}}">
+                            <img src="{{$comic['thumb']}}" class="card-img-top" alt="">
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">{{$comic['title']}}</h5>
-                            <p class="card-text">{{$comic['description']}}</p>
+                            <p class="card-text">{{substr_replace($comic['description'], '...', 100)}}</p>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">${{$comic['price']}}</li>
@@ -35,9 +39,6 @@
         </div>
 
     </div>
-
-
-
 
 </main>
 
