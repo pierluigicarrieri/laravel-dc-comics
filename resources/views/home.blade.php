@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Comics')
+@section('title', 'Homepage')
 
 @section('content')
 

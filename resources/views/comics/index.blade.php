@@ -8,7 +8,13 @@
 
     <div class="container">
 
-        <h1 class="py-5 text-center">Our comics</h1>
+        <h1 class="py-3 text-center">Our comics</h1>
+
+        <div class="d-flex justify-content-center py-5">
+
+            <a href="{{route('comics.create')}}" class="btn btn-primary">Create New Comic</a>
+
+        </div>
 
         <div class="row row-cols-4 g-4">
 
