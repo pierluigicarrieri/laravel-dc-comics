@@ -15,7 +15,9 @@
 
 <div class="container">
     <header class="d-flex justify-content-between">
-        <img class="my-3 logo" src="/images/dc-logo.png" alt="dc-logo">
+        <a href="{{route('index')}}">
+            <img class="my-3 logo" src="/images/dc-logo.png" alt="dc-logo">
+        </a>
         <nav class="d-flex align-items-center">
             <ul class="nav">
                 @foreach ($headerData as $listItem)
