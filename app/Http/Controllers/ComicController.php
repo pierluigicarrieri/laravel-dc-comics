@@ -45,9 +45,21 @@ class ComicController extends Controller {
 
     public function show($id) {
 
-        $comic = Comic::find($id);
+        $comic = Comic::findOrFail($id);
 
         return view('comics.show', ['comic'=>$comic]);
+
+    }
+
+    public function edit($id) {
+
+        $comic = Comic::findOrFail($id);
+
+        return view('comics.edit', ['comic'=>$comic]);
+
+    }
+
+    public function update($id) {
 
     }
 }

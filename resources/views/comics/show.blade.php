@@ -29,6 +29,11 @@
                         <li class="list-group-item">{{$comic->type}}</li>
                         <li class="list-group-item">{{str_replace(['[', ']','"'], '', $comic->artists)}}</li>
                         <li class="list-group-item">{{str_replace(['[', ']','"'], '', $comic->writers)}}</li>
+                        <li class="list-group-item">
+                            <button class="btn btn-primary">
+                                <a class="text-light" href="{{route('comics.edit', $comic->id)}}">Edit comic</a>
+                            </button>
+                        </li>
                     </ul>
                 </div>
 
