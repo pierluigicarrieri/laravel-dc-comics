@@ -8,7 +8,10 @@
 
     <div class="container">
 
-        <h1 class="py-5 text-center">Edit your comic by filling in the following form!</h1>
+        <h1 class="py-5 text-center">
+            Edit your comic by filling in the following form! 
+            Attention: artists and writers must be in json format!!
+        </h1>
 
         <div class="row">
                 

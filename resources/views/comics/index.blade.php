@@ -8,7 +8,9 @@
 
     <div class="container">
 
-        <h1 class="py-3 text-center">Our comics</h1>
+        <h1 class="py-3 text-center">Our comics!</h1>
+
+        <h2 class="py-3 text-center">Click on a comic thumbnail to be able to read all its details, edit it and delete it!</h2>
 
         <div class="d-flex justify-content-center py-5">
 

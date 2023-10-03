@@ -29,9 +29,12 @@
                         <li class="list-group-item">{{$comic->type}}</li>
                         <li class="list-group-item">{{str_replace(['[', ']','"'], '', $comic->artists)}}</li>
                         <li class="list-group-item">{{str_replace(['[', ']','"'], '', $comic->writers)}}</li>
-                        <li class="list-group-item">
-                            <button class="btn btn-primary">
+                        <li class="list-group-item d-flex justify-content-evenly">
+                            <button class="btn btn-warning">
                                 <a class="text-light" href="{{route('comics.edit', $comic->id)}}">Edit comic</a>
+                            </button>
+                            <button class="btn btn-danger">
+                                <a class="text-light" href="{{route('comics.edit', $comic->id)}}">Delete comic</a>
                             </button>
                         </li>
                     </ul>
