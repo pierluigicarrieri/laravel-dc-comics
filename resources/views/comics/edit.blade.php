@@ -58,12 +58,12 @@
 
                         <div class="mb-3">
                             <label for="" class="form-label">Artists</label>
-                            <input type="text" class="form-control" name="artists" value="{{ old('artists', str_replace(['[', ']','"'], '', $comic->artists)) }}">
+                            <input type="text" class="form-control" name="artists" value="{{ old('artists', $comic->artists) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Writers</label>
-                            <input type="text" class="form-control" name="writers" value="{{ old('writers', str_replace(['[', ']','"'], '', $comic->artists)) }}">
+                            <input type="text" class="form-control" name="writers" value="{{ old($comic->writers) }}">
                         </div>
 
                         <button class="btn btn-primary">Edit</button>
@@ -81,3 +81,9 @@
 </main>
 
 @endsection
+
+
+
+{{-- {{ old('writers', str_replace(['[', ']','"'], '', $comic->artists)) }}
+
+{{ old('writers', str_replace(['[', ']','"'], '', $comic->writers)) }} --}}

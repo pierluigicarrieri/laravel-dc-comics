@@ -30,12 +30,17 @@
                         <li class="list-group-item">{{str_replace(['[', ']','"'], '', $comic->artists)}}</li>
                         <li class="list-group-item">{{str_replace(['[', ']','"'], '', $comic->writers)}}</li>
                         <li class="list-group-item d-flex justify-content-evenly">
+
                             <button class="btn btn-warning">
                                 <a class="text-light" href="{{route('comics.edit', $comic->id)}}">Edit comic</a>
                             </button>
-                            <button class="btn btn-danger">
-                                <a class="text-light" href="{{route('comics.edit', $comic->id)}}">Delete comic</a>
-                            </button>
+
+                            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                                @csrf
+                                @method('delete')
+                                <button type="submit" class="btn btn-danger">Elimina</button>
+                            </form>
+
                         </li>
                     </ul>
                 </div>
