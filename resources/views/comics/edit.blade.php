@@ -20,47 +20,47 @@
 
                         <div class="mb-3">
                             <label for="" class="form-label">Title</label>
-                            <input type="text" class="form-control" name="title" value="{{$comic->title}}">
+                            <input type="text" class="form-control" name="title" value="{{ old('title', $comic->title) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Description</label>
-                            <textarea type="text" class="form-control" name="description">{{$comic->description}}</textarea>
+                            <textarea type="text" class="form-control" name="description">{{ old('description', $comic->description) }}</textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Thumb</label>
-                            <input type="text" class="form-control" name="thumb" value="{{$comic->thumb}}">
+                            <input type="text" class="form-control" name="thumb" value="{{ old('thumb', $comic->thumb) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Price</label>
-                            <input type="number" step=".01" class="form-control" name="price" value="{{$comic->price}}">
+                            <input type="number" step=".01" class="form-control" name="price" value="{{ old('price', $comic->price) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Series</label>
-                            <input type="text" class="form-control" name="series" value="{{$comic->series}}">
+                            <input type="text" class="form-control" name="series" value="{{ old('series', $comic->series) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Sale Date</label>
-                            <input type="date" class="form-control" name="sale_date" value="{{$comic->sale_date}}">
+                            <input type="date" class="form-control" name="sale_date" value="{{ old('sale_date', $comic->sale_date) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Type</label>
-                            <input type="text" class="form-control" name="type" value="{{$comic->type}}">
+                            <input type="text" class="form-control" name="type" value="{{ old('type', $comic->type) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Artists</label>
-                            <input type="text" class="form-control" name="artists" value="{{str_replace(['[', ']','"'], '', $comic->artists)}}">
+                            <input type="text" class="form-control" name="artists" value="{{ old('artists', str_replace(['[', ']','"'], '', $comic->artists)) }}">
                         </div>
 
                         <div class="mb-3">
                             <label for="" class="form-label">Writers</label>
-                            <input type="text" class="form-control" name="writers" value="{{str_replace(['[', ']','"'], '', $comic->artists)}}">
+                            <input type="text" class="form-control" name="writers" value="{{ old('writers', str_replace(['[', ']','"'], '', $comic->artists)) }}">
                         </div>
 
                         <button class="btn btn-primary">Edit</button>
